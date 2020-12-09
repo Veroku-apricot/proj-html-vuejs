@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 500px;
+  background-image: url('../img/banner_images.jpg');
+  background-position: center top ;
+}
+
+/* Nav bar */
+#nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px;
+}
+  #nav > img {
+    max-height: 100%;
+  }
+
+/* Main */
+main > div {
+  height: 100px;
+}
+
+/* About me */
+#about {
+  background-color: #44414c;
+}
+
+/* Why work with me */
+#why {
+  background-color: #222229;
+}
+
+/* Recent work */
+#r-work {
+  background-color: #97c376;
+}
+
+/* Products */
+#products {
+  width: 100%;
+  height: calc(607px * 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+  .portfolio {
+    max-width: calc(100% / 2);
+    height: 607px;
+  }
+  .portfolio > img {
+    max-width: 100%;
+  }
+
+/* View all work */
+#w-work {
+  background-color: #f9245c;
+}
+
+/* Expert design advice */
+#e-advice {
+  background-color: #4c629e;
+}
+
+/* Articles */
+#articles {
+  display: flex;
+  height: auto;
+}
+  #articles > img {
+    width: calc(100% / 3);
+  }
