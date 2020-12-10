@@ -13,16 +13,19 @@
   <body>
     <header>
       <!-- Nav bar -->
-      <div id="nav">
-        <img src="img/av-freelance-logo-retina.png" alt="">
-        <div class="">
-          <i class="fas fa-plus"></i>
-          <i class="fas fa-bars"></i>
-          <nav>
-            <ul>
-              <li v-for="(link, index) in links"><a href="#">{{link}}</a></li>
-            </ul>
-          </nav>
+      <div id="head">
+        <div id="nav" :class="menuClass">
+          <img src="img/av-freelance-logo-retina.png" alt="">
+          <div class="">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-bars" @click="showMenu"></i>
+          </div>
+        </div>
+        <!-- Burger Menu -->
+        <div class="burgermenu" :class="menuClass">
+          <ul>
+            <li v-for="(link, index) in links"><a href="#">{{link}}</a></li>
+          </ul>
         </div>
       </div>
       <!-- Jumbotron -->

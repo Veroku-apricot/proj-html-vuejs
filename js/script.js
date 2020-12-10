@@ -1,16 +1,18 @@
 // Header
 var nav = new Vue ({
-  el: '#nav',
+  el: '#head',
   data: {
     links: [
-      'link',
-      'link',
-      'link',
-      'link',
-      'link'
-    ]
+      'Home',
+      'Works',
+      'Articles',
+      'Let\'s talk'
+    ],
+    menuClass: ''
   },
   methods: {
-
+    showMenu: function () {
+      this.menuClass===''?this.menuClass='active':this.menuClass=''
+    }
   }
 })
