@@ -8,13 +8,13 @@ var nav = new Vue ({
       'Articles',
       'Let\'s talk'
     ],
-    menuClass: '',
-    iconClass: 'active'
+    menu: false,
+    openMenu: true
   },
   methods: {
     shMenu: function () {
-      this.menuClass===''?this.menuClass='active':this.menuClass='';
-      this.iconClass==='active'?this.iconClass='':this.iconClass='active';
+      this.openMenu===true?this.openMenu=false:this.openMenu=true;
+      this.menu = !this.menu;
     }
   }
 })

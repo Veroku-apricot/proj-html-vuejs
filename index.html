@@ -14,16 +14,16 @@
     <header>
       <!-- Nav bar -->
       <div id="head">
-        <div id="nav" :class="menuClass">
+        <div id="nav" :class="{active : menu}">
           <img src="img/av-freelance-logo-retina.png" alt="">
           <div class="">
             <i class="fas fa-plus"></i>
-            <i class="fas fa-bars" :class="iconClass" @click="shMenu"></i>
-            <i class="fas fa-times" :class="menuClass" @click="shMenu"></i>
+            <i class="fas fa-bars" :class="{active : openMenu}" @click="shMenu"></i>
+            <i class="fas fa-times" :class="{active : menu}" @click="shMenu"></i>
           </div>
         </div>
         <!-- Burger Menu -->
-        <div class="burgermenu" :class="menuClass">
+        <div class="burgermenu" :class="{active : menu}">
           <ul>
             <li v-for="(link, index) in links"><a href="#">{{link}}</a></li>
           </ul>
@@ -34,41 +34,68 @@
         <p>AVADA FREELANCE</p>
         <h1>Art Director</h1>
         <p>IF IT DOESN'T CHALLENGE YOU, IT DOESN'T CHANGE YOU</p>
-
       </div>
     </header>
     <main>
       <!-- About me -->
       <div id="about">
-
+        <h2>About Me</h2>
+        <p>UI & UX EXPERT</p>
+        <div class="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
       <!-- Why work with me -->
       <div id="why">
-
+        <h2>Why Work With Me</h2>
+        <p>WEB - BRANDING UX/UI</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
       </div>
       <!-- Recent work -->
       <div id="r-work">
-
+        <h2>Recent Work</h2>
+        <p><p>WEB - BRANDING UX/UI</p></p>
       </div>
       <!-- Products -->
       <div id="products">
         <div class="portfolio">
           <img src="img/portfolio1_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>FLAT PICTURE FRAME</p>
+          </div>
         </div>
         <div class="portfolio">
           <img src="img/portfolio5_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>A BAG FOR LIFE</p>
+          </div>
         </div>
         <div class="portfolio">
           <img src="img/portfolio4_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>BEYOND LABELS</p>
+          </div>
         </div>
         <div class="portfolio">
           <img src="img/portfolio3_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>AND THE AMPERSAND</p>
+          </div>
         </div>
         <div class="portfolio">
           <img src="img/portfolio2_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>RUNNING MAN</p>
+          </div>
         </div>
         <div class="portfolio">
           <img src="img/portfolio6_featured_item.jpg" alt="">
+          <div class="overlay">
+            <p>THE NOTEBOOK</p>
+          </div>
         </div>
       </div>
       <!-- View all work -->
