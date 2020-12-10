@@ -2,24 +2,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
 }
 
 header {
-  height: 500px;
   background-image: url('../img/banner_images.jpg');
-  background-position: center top ;
+  background-size: contain;
+  background-position: center;
 }
 
 /* Nav bar */
 #nav {
-  height: 70px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   color: white;
-  padding: 15px;
+  padding: 25px 50px 45px;
+  background-color: lightgreen;
 }
   #nav > img {
     max-height: 100%;
+  }
+  #nav > div {
+    background-color: yellow;
+  }
+    #nav div > i {
+      font-size: 25px;
+      margin: 0 30px 30px 0;
+    }
+    #nav div > i:hover {
+      cursor: pointer;
+      color: #f9245c;
+    }
+    #nav div > nav {
+      background-color: pink;
+    }
+
+/* Jumbotron */
+#jumbo {
+  height: calc(100vh - 120px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  #jumbo > h1 {
+    color: #f9245c;
+    font-size: 100px;
   }
 
 /* Main */

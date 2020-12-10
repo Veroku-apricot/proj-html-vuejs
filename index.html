@@ -15,12 +15,21 @@
       <!-- Nav bar -->
       <div id="nav">
         <img src="img/av-freelance-logo-retina.png" alt="">
-        <i class="fas fa-plus"></i>
-        <i class="fas fa-bars"></i>
-
+        <div class="">
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-bars"></i>
+          <nav>
+            <ul>
+              <li v-for="(link, index) in links"><a href="#">{{link}}</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <!-- Jumbotron -->
-      <div class="">
+      <div id="jumbo">
+        <p>AVADA FREELANCE</p>
+        <h1>Art Director</h1>
+        <p>IF IT DOESN'T CHALLENGE YOU, IT DOESN'T CHANGE YOU</p>
 
       </div>
     </header>
