@@ -129,27 +129,58 @@
       </div>
       <!-- Expert design advice -->
       <div id="e-advice">
+        <h2>Expert Design Advice</h2>
+        <p>TRENDING DESIGN NEWS</p>
 
       </div>
       <!-- Articles -->
       <div id="articles">
-        <img src="img/blog3-featured.jpg" alt="">
-        <img src="img/blog2-featured.jpg" alt="">
-        <img src="img/blog1-featured.jpg" alt="">
-
+        <div class="">
+          <img src="img/blog3-featured.jpg" alt="">
+          <h3>Live The Design Process</h3>
+          <p>What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="">
+          <img src="img/blog2-featured.jpg" alt="">
+          <h3>What’s Next of the App Store?</h3>
+          <p>What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="">
+          <img src="img/blog1-featured.jpg" alt="">
+          <h3>The Humble Wooden Desk</h3>
+          <p>What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+        </div>
       </div>
       <!-- Lets work together -->
       <div id="work-form">
+        <h2>Let's Work Together</h2>
+        <p>TELL ME MORE ABOUT YOUR PROJECT</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="NAME*">
+          <input type="text" name="" value="" placeholder="EMAIL*">
+          <input type="text" name="" value="" placeholder="PHONE">
+          <button type="button" name="button">LET'S TALK</button>
+        </form>
 
       </div>
     </main>
     <!-- Footer -->
     <footer>
-      <div class="">
+      <div id="foot">
         <img src="img/avada-footer-logo.png" alt="">
-
+        <div class="">
+          <span>&#169; Copyright 2012 - 2020 |</span>
+          <span>Avada Theme by Theme Fusion |</span>
+          <span>All Rights Reserved |</span>
+          <span>Powered by WordPress</span>
+        </div>
+        <nav>
+          <ul>
+            <li v-for="(social, i) in socials"><a href="#"><i :class="social"></i></a></li>
+          </ul>
+        </nav>
       </div>
-
     </footer>
     <!-- Script -->
     <script type="text/javascript" src="js/script.js"></script>

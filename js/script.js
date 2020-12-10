@@ -18,3 +18,18 @@ var nav = new Vue ({
     }
   }
 })
+
+// Footer
+var foot = new Vue ({
+  el: '#foot',
+  data: {
+    socials: [
+      'fab fa-facebook-f',
+      'fab fa-twitter',
+      'fab fa-instagram',
+      'fab fa-youtube'
+    ]
+  }
+
+
+})
