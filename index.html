@@ -18,7 +18,8 @@
           <img src="img/av-freelance-logo-retina.png" alt="">
           <div class="">
             <i class="fas fa-plus"></i>
-            <i class="fas fa-bars" @click="showMenu"></i>
+            <i class="fas fa-bars" :class="iconClass" @click="shMenu"></i>
+            <i class="fas fa-times" :class="menuClass" @click="shMenu"></i>
           </div>
         </div>
         <!-- Burger Menu -->
