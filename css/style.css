@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -17,7 +17,7 @@
   }
 
   /* Cursor pointer */
-  #nav > img:hover, #nav div > i:hover, .portfolio:hover{
+  #nav > img:hover, #nav div > i:hover, .portfolio:hover, #w-work:hover{
     cursor: pointer;
   }
 
@@ -39,6 +39,7 @@ header {
   color: white;
   padding: 25px 50px 45px;
   position: fixed;
+  z-index: 99;
 }
   #nav > img {
     max-height: 100%;
@@ -67,6 +68,7 @@ header {
   height: calc(100vh - 120px);
   background-color: #222229;
   padding: 50px 0;
+  z-index: 99;
 }
   .burgermenu.active, .fa-times.active, .fa-bars.active {
     display: block;
@@ -89,6 +91,7 @@ header {
 
 /* Jumbotron */
 #jumbo {
+  width: 100%;
   height: calc(754px - 120px);
   color: white;
   display: flex;
@@ -105,6 +108,9 @@ header {
 main > div {
   text-align: center;
 }
+  main div > p {
+    color: #7a89ab;
+  }
 /* About me */
 #about {
   background-color: #222229;
@@ -131,6 +137,7 @@ main > div {
     max-width: calc(100% / 2);
     height: 607px;
     position: relative;
+
   }
   .portfolio > img {
     max-width: 100%;
@@ -146,24 +153,52 @@ main > div {
     top: 0;
     background: rgba(249, 36, 92, 0.9);
     width: 100%;
-    height: 100%;
+    height: 608px;
     transition: .3s ease;
     opacity: 0;
     color: white;
     font-size: 20px;
-    padding: 20px;
   }
 
 /* View all work */
 #w-work {
   background-color: #f9245c;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+  #w-work > p {
+    color: white;
+  }
+  #w-work:hover {
+    background-color: white;
+    color: #f9245c;
+  }
 
 /* Cit */
 #cit {
-  height: 300px;
+  height: 100vh;
   background-image: url('../img/testimonial_bkgd.jpg');
+  color: white;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+  #cit div > div {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #cit div > p {
+    color: white;
+  }
+  #cit h1 {
+    color: #f9245c;
+    font-size: 100px;
+  }
 
 /* Expert design advice */
 #e-advice {
