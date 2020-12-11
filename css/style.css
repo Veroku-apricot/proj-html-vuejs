@@ -186,7 +186,14 @@ main > div {
   background-color: #191c23;
   padding: 130px 130px;
   height: auto;
+  position: relative;
 }
+  #why > .gradient {
+    margin-left: -130px;
+  }
+    #why .gradient .main {
+      fill: #20232c;
+    }
   #why > .small.lineH {
     width: 70%;
     margin: auto;
