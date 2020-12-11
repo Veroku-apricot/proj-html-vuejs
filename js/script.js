@@ -14,7 +14,7 @@ var nav = new Vue ({
   methods: {
     shMenu: function () {
       this.openMenu===true?this.openMenu=false:this.openMenu=true;
-      this.menu = !this.menu;
+      this.menu = !this.openMenu;
     }
   }
 })

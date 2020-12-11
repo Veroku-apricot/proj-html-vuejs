@@ -12,11 +12,29 @@
   .pink {
     color: #f9245c;
   }
-  .blue {
-    color: #7a89ab;
+    .blue {
+      color: #7a89ab;
+    }
+    .white {
+      color: white;
+    }
+
+  /* Font size */
+  .small {
+    font-size: 14px;
   }
-  .white {
-    color: white;
+
+  /* Letter spacing */
+  .space {
+    letter-spacing: 5px;
+  }
+    .spaceS {
+      letter-spacing: 3px;
+    }
+
+  /* Line height */
+  .lineH {
+    line-height: 1.6;
   }
 
   h2 {
@@ -24,9 +42,9 @@
     font-size: 48px;
   }
 
-  h3 {
-    font-size: 28px;
-  }
+    h3 {
+      font-size: 28px;
+    }
 
   /* Cursor pointer */
   #nav > img:hover, #nav div > i:hover, .portfolio:hover, #w-work:hover, #foot li, .article:hover, #articles h3:hover, form > button:hover{
@@ -110,6 +128,7 @@ header {
 #jumbo {
   width: 100%;
   height: calc(754px - 120px);
+  padding-top: 50px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -119,12 +138,20 @@ header {
 }
   #jumbo > h1 {
     font-size: 140px;
+    margin-bottom: 30px;
+  }
+  #jumbo > span {
+    font-size: 20px;
+    font-weight: bold;
   }
 
 /* Main */
 main > div {
   text-align: center;
 }
+  #about > p, #why > p, #r-work > p, #e-advice > p, #work-form > p {
+    margin: 30px 0;
+  }
 /* About me */
 #about {
   padding: 130px 130px 0;
@@ -143,7 +170,8 @@ main > div {
 /* Why work with me */
 #why {
   background-color: #191d26;
-  padding: 130px 130px 0;
+  padding: 130px 130px;
+  height: auto;
 }
 
 /* Recent work */
@@ -246,7 +274,7 @@ main > div {
     text-align: left;
   }
   #articles div > div:last-child{
-    padding: 20px;
+    padding: 30px 20px 40px;
   }
   #articles img {
     max-width: 100%;
