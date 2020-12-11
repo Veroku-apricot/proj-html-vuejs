@@ -37,14 +37,26 @@
     line-height: 1.6;
   }
 
+  /* Titles */
   h2 {
     color: white;
     font-size: 48px;
   }
-
     h3 {
       font-size: 28px;
     }
+    h4 {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+
+  /* Esthetic line bar */
+  .bar {
+    width: 150px;
+    border-bottom: 1px solid white;
+    margin: auto;
+    margin-bottom: 50px;
+  }
 
   /* Cursor pointer */
   #nav > img:hover, #nav div > i:hover, .portfolio:hover, #w-work:hover, #foot li, .article:hover, #articles h3:hover, form > button:hover{
@@ -154,17 +166,19 @@ main > div {
   }
 /* About me */
 #about {
-  padding: 130px 130px 0;
+  padding: 130px 150px 0;
   background-color: #20232c;
 }
-  #about > div {
+  #about > div:last-child {
+    height: 300px;
     text-align: left;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   #about div > p {
-    width: calc((100% / 2) - 20px);
-    margin: 10px;
+    width: calc((100% / 2) - 40px);
+    margin: 10px 20px;
   }
 
 /* Why work with me */
@@ -177,7 +191,7 @@ main > div {
 /* Recent work */
 #r-work {
   background-color: #97c376;
-  padding: 130px;
+  padding: 130px 0 50px;
 }
 
 /* Products */
@@ -234,10 +248,11 @@ main > div {
     color: #f9245c;
   }
 
-/* Cit */
+/* Quote */
 #cit {
-  height: 100vh;
+  height: 800px;
   background-image: url('../img/testimonial_bkgd.jpg');
+  background-position: center;
   color: white;
   padding: 100px 0;
   display: flex;
@@ -250,17 +265,23 @@ main > div {
     display: flex;
     justify-content: space-around;
   }
+  #cit > div:first-child > p {
+    font-style: italic;
+    width: 75%;
+    margin: 30px auto;
+    letter-spacing: 1px;
+  }
+  #cit > div:last-child > p {
+    margin-bottom: 50px;
+  }
   #cit div > p {
     color: white;
-  }
-  #cit h1 {
-    font-size: 100px;
   }
 
 /* Expert design advice */
 #e-advice {
   background-color: #4c629e;
-  padding: 130px;
+  padding: 130px 0 50px;
 }
 
 /* Articles */
@@ -299,6 +320,9 @@ main > div {
 }
   #work-form > h2 {
     color: black;
+  }
+  #work-form > div {
+    border-color: #7a89ab;
   }
   form {
     display: flex;
