@@ -8,16 +8,15 @@
   text-decoration: none;
 }
 
-  .active {
-    background-color: #222229;
-  }
-
   /* Font color */
   .pink {
     color: #f9245c;
   }
   .blue {
     color: #7a89ab;
+  }
+  .white {
+    color: white;
   }
 
   h2 {
@@ -30,7 +29,7 @@
   }
 
   /* Cursor pointer */
-  #nav > img:hover, #nav div > i:hover, .portfolio:hover, #w-work:hover, #foot li, .article:hover, #articles h3:hover{
+  #nav > img:hover, #nav div > i:hover, .portfolio:hover, #w-work:hover, #foot li, .article:hover, #articles h3:hover, form > button:hover{
     cursor: pointer;
   }
 
@@ -72,6 +71,9 @@ header {
     .fa-times, .fa-bars {
       display: none;
     }
+  .active {
+    background-color: #20232c;
+  }
 
 /* Burger menu */
 .burgermenu {
@@ -81,7 +83,7 @@ header {
   display: none;
   width: 100%;
   height: calc(100vh - 120px);
-  background-color: #222229;
+  background-color: #20232c;
   padding: 50px 0;
   z-index: 99;
 }
@@ -126,7 +128,7 @@ main > div {
 /* About me */
 #about {
   padding: 130px 130px 0;
-  background-color: #222229;
+  background-color: #20232c;
 }
   #about > div {
     text-align: left;
@@ -141,11 +143,13 @@ main > div {
 /* Why work with me */
 #why {
   background-color: #191d26;
+  padding: 130px 130px 0;
 }
 
 /* Recent work */
 #r-work {
   background-color: #97c376;
+  padding: 130px;
 }
 
 /* Products */
@@ -228,6 +232,7 @@ main > div {
 /* Expert design advice */
 #e-advice {
   background-color: #4c629e;
+  padding: 130px;
 }
 
 /* Articles */
@@ -241,7 +246,7 @@ main > div {
     text-align: left;
   }
   #articles div > div:last-child{
-    padding: 15px;
+    padding: 20px;
   }
   #articles img {
     max-width: 100%;
@@ -262,18 +267,44 @@ main > div {
 #work-form{
   background-color: #ececec;
   color: black;
+  padding: 130px;
 }
   #work-form > h2 {
     color: black;
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    form > * {
+      height: 60px;
+      width: 560px;
+      margin-top: 30px;
+      border: none;
+      padding-left: 10px;
+    }
+    form > button {
+      background-color: #f9245c;
+      font-size: 18px;
+    }
+    form > button:hover {
+      background-color: white;
+      color: #f9245c;
+    }
 
 /* Footer */
 footer {
-  height: 300px;
   background-color: #191d26;
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0 50px;
 }
+  #foot > div {
+    margin: 35px 0 25px;
+  }
+    #foot div span > a {
+      color: white;
+    }
   footer nav > ul {
     display: flex;
     justify-content: center;
@@ -282,12 +313,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ececec;
+    background-color: white;
     margin: 5px;
     height: 36px;
     width: 36px;
   }
+  #foot li:hover {
+    background-color: #d9d9d9;
+  }
   #foot li > a {
-    color: #222229;
+    color: #191d26;
     font-size: 20px;
   }

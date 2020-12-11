@@ -30,6 +30,4 @@ var foot = new Vue ({
       'fab fa-youtube'
     ]
   }
-
-
 })
